@@ -1,0 +1,71 @@
+/* Tablet */
+@media (min-width: 769px) and (max-width: 1440px) {
+  .webpage {
+    padding: 20px 10px;
+  }
+  .sidebar {
+    width: 30%;
+    margin-left: 0;
+    margin-left: 20px;
+  }
+  .container {
+    width: 60%;
+  }
+}
+/* Mobile */
+@media (min-width: 0px) and (max-width: 768px) {
+  .webpage {
+    padding: 20px 10px;
+    flex-direction: column-reverse;
+    height: 100%;
+  }
+  .webpage .illustration {
+    display: none;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    height: 90%;
+    width: 95%;
+    margin-right: 0;
+    padding: 40px 0;
+    margin-top: 20px;
+  }
+  .container .name {
+    font-size: 25px;
+    display: none;
+  }
+  .container .job {
+    display: none;
+  }
+  .container .contact {
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  .container .detail {
+    display: block;
+  }
+  .container .social-list {
+    margin-top: 20px;
+  }
+  .sidebar {
+    width: 95%;
+    margin-left: 0;
+    flex: 1;
+  }
+
+  .sidebar .name {
+    padding-top: 30px;
+    font-size: 25px;
+    display: block;
+  }
+  .sidebar .job {
+    padding-top: 10px;
+    font-size: 20px;
+    display: block;
+  }
+  .sidebar .menu {
+    margin-top: 90px;
+  }
+}
