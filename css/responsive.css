@@ -33,7 +33,9 @@
   .webpage {
     padding: 20px 10px;
     flex-direction: column;
-    height: 100%;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: initial;
   }
   .webpage .illustration-screen,
   .webpage .illustration-man,
@@ -48,7 +50,10 @@
     margin-right: 0;
     padding: 40px 0;
     margin-top: 20px;
-    order: 3;
+    order: 2;
+  }
+  .container-home {
+    animation: none;
   }
   .container .name {
     font-size: 25px;
@@ -77,19 +82,113 @@
   }
   .container-information {
     order: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    padding-top: 50px;
+  }
+  .container-information .heading {
+    margin-left: 22px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .container-information .about-me {
+    margin-top: -30px;
+  }
+  .container-information .skills {
+    margin-top: 5px;
+  }
+  .container-information .divider {
+    margin-left: 25px;
+  }
+  .container-information .content {
+    /* flex-wrap: wrap; */
+    width: 100%;
+    height: 100%;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .content .first {
+    height: 100%;
+    margin-top: 20px;
+  }
+  .container-information .box {
+    width: 85%;
+    height: 145px;
+    padding: 2px;
+  }
+  .box + .box {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  .content .info-occupation {
+    margin-left: 20px;
+    font-size: 18px;
+  }
+  .content .info-name {
+    margin-left: 20px;
+    font-size: 28px;
+    font-weight: 700;
+  }
+  .container-information .skills {
+    width: 90%;
+  }
+  .container-information .chart {
+    margin-left: -25px;
+    margin-top: 20px;
+  }
+  .chart .name {
+    display: initial;
+    font-size: 18px;
+    margin-bottom: 1px;
+    margin-left: 42px;
+    font-size: 14px;
+  }
+  .chart .line {
+    margin-top: 5px;
+    width: 93%;
+    margin: 5px 0 30px 40px;
+  }
+  .obj + .obj {
+    margin-top: 10px;
+  }
+  .title {
+    width: 75%;
+    margin: 20px 0 30px 55px;
+  }
+  .cirti-list {
+    flex-wrap: wrap;
+  }
+  .cirti-outter {
+    width: 80%;
+    height: 125px;
+  }
+  .cirti-inner {
+    justify-content: flex-start;
+  }
+  .cirti-outter + .cirti-outter {
+    margin-top: 20px;
+  }
+  .cirti-list .icon {
+    display: none;
+  }
+  .cirti-info {
+    margin-left: 30px;
   }
 
   .sidebar {
+    margin-top: 0px;
     width: 95%;
     margin-left: 0;
-    height: 95vh;
+    height: 85vh;
     order: 1;
   }
   .sidebar .avt {
-    margin-top: 100px;
+    margin-top: 36px;
   }
   .sidebar .name {
-    margin-top: -120px;
+    margin-top: -80px;
     font-size: 25px;
     display: block;
     z-index: 1;
