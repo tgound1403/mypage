@@ -27,6 +27,9 @@
   .social-list ion-icon {
     font-size: 2.5vw;
   }
+  .container-information {
+    height: 170vh;
+  }
 }
 /* Mobile */
 @media (min-width: 0px) and (max-width: 768px) {
@@ -80,6 +83,7 @@
   .social-list ion-icon {
     font-size: 6vw;
   }
+  .container-photography,
   .container-information {
     order: 2;
     display: flex;
@@ -157,12 +161,10 @@
     width: 75%;
     margin: 20px 0 30px 55px;
   }
-  .cirti-list {
-    flex-wrap: wrap;
-  }
   .cirti-outter {
     width: 80%;
     height: 125px;
+    margin-left: 0;
   }
   .cirti-inner {
     justify-content: flex-start;
@@ -176,7 +178,20 @@
   .cirti-info {
     margin-left: 30px;
   }
-
+  .cirti-info .cirti-name {
+    font-size: 20px;
+  }
+  .container-photography .photo-box {
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  .photo-box .box {
+    margin: 0;
+    width: 80%;
+    margin-top: 30px;
+  }
   .sidebar {
     margin-top: 0px;
     width: 95%;
@@ -189,13 +204,12 @@
   }
   .sidebar .name {
     margin-top: -80px;
-    font-size: 25px;
+    font-size: 24px;
     display: block;
     z-index: 1;
   }
   .sidebar .job {
-    padding-top: 10px;
-    font-size: 20px;
+    font-size: 18px;
     display: block;
   }
   .license {
